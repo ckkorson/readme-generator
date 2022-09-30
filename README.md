@@ -1,10 +1,10 @@
 # README Generator
     
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+    
 ## Description
     
-d
-    
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+The purpose of this application is to generate a professional README based on user input.
     
 ## Table of Contents
     
@@ -16,30 +16,36 @@ d
     
 - [Tests](#tests)
     
+- [License](#license)
+    
 - [Questions](#questions)
     
 ## Installation Instructions
     
-d
+Make sure to install inquirer version 8.2.4
     
 ## Usage
     
-d
+Run node index.js in command line to get user prompts for info.
     
 ## Contributing
     
-d
+none
     
 ## Tests
     
-d
+none
+    
+## License
+    
+The project has a license type of: MIT
     
 ## Questions
     
 ### Github Profile
     
-[d](https://github.com/d)
+[ckkorson](https://github.com/ckkorson)
     
 ### Email
     
-d
+caleb.k.korson@gmail.com

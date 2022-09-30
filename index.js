@@ -1,6 +1,21 @@
 const inquirer = require('inquirer')
 const fs = require('fs')
 
+const licenseSelection = (license) => {
+    if(license === 'Apache License 2.0') {
+        return '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
+    }
+    if(license === 'GNU GPLv3') {
+        return '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)'
+    }
+    if(license === 'MIT') {
+        return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
+    }
+    if(license === 'ISC') {
+        return '[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)'
+    }
+}
+
 inquirer.prompt ([
     {
         type: 'input',
@@ -52,14 +67,15 @@ inquirer.prompt ([
 .then((data) => {
     fs.writeFile('README.md',
     `# ${data.projectName}
+    \n${licenseSelection(data.license)}
     \n## Description
     \n${data.description}
-    \n[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
     \n## Table of Contents
     \n- [Installation Instructions](#installation-instructions)
     \n- [Usage](#usage)
     \n- [Contributing](#contributing)
     \n- [Tests](#tests)
+    \n- [License](#license)
     \n- [Questions](#questions)
     \n## Installation Instructions
     \n${data.installation}
@@ -69,6 +85,8 @@ inquirer.prompt ([
     \n${data.contribution}
     \n## Tests
     \n${data.tests}
+    \n## License
+    \nThe project has a license type of: ${data.license}
     \n## Questions
     \n### Github Profile
     \n[${data.github}](https://github.com/${data.github})
