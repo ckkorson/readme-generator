@@ -39,10 +39,10 @@ inquirer.prompt ([
     \n## Description
     ${data.description}
     \n## Table of Contents
-    - [Installation Instructions](#installation-instructions)
-    - [Usage](#usage)
-    - [Contributing](#contributing)
-    - [Tests](#tests)
+    \n[Installation Instructions](#installation-instructions)
+    \n[Usage](#usage)
+    \n[Contributing](#contributing)
+    \n[Tests](#tests)
     \n## Installation Instructions
     ${data.installation}
     \n## Usage
