@@ -44,13 +44,13 @@ inquirer.prompt ([
     \n[Contributing](#contributing)
     \n[Tests](#tests)
     \n## Installation Instructions
-    ${data.installation}
+    \n${data.installation}
     \n## Usage
-    ${data.usage}
+    \n${data.usage}
     \n## Contributing
-    ${data.contribution}
+    \n${data.contribution}
     \n## Tests
-    ${data.tests}`, 
+    \n${data.tests}`, 
     (err) => err ? console.log(err) : console.log('README.md created!')
     )
 })
