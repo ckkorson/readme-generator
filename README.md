@@ -4,10 +4,10 @@
     d
     
 ## Table of Contents
-    - [Installation Instructions](##installation-instructions)
-    - [Usage](##usage)
-    - [Contributing](##contributing)
-    - [Tests](##tests)
+    - [Installation Instructions](#installation-instructions)
+    - [Usage](#usage)
+    - [Contributing](#contributing)
+    - [Tests](#tests)
     
 ## Installation Instructions
     d
