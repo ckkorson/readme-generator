@@ -34,7 +34,7 @@ User must install npm inquirer version 8.2.4
     
 ## Usage
     
-none
+[Walkthrough Video](https://drive.google.com/file/d/1bKCDO-jsxDarWBgFYaDyA0aRkBxhke_c/view)
     
 ## Contributing
     
