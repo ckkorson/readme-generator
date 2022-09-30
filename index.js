@@ -14,6 +14,9 @@ const licenseSelection = (license) => {
     if(license === 'ISC') {
         return '[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)'
     }
+    if(license === 'none') {
+        return 'No License'
+    }
 }
 
 inquirer.prompt ([
@@ -60,8 +63,18 @@ inquirer.prompt ([
     {
         type: 'list',
         name: 'license',
-        message: 'Select what type of license you would like for this project',
-        choices: ['Apache License 2.0', 'GNU GPLv3', 'MIT', 'ISC']
+        message: 'Select what type of license you would like for this project:',
+        choices: ['Apache License 2.0', 'GNU GPLv3', 'MIT', 'ISC', 'none']
+    },
+    {
+        type: 'input',
+        name: 'link',
+        message: 'Enter link to deployed application.'
+    },
+    {
+        type: 'input',
+        name: 'reference',
+        message: 'Enter any references used while creating app.'
     }
 ])
 .then((data) => {
@@ -72,13 +85,17 @@ inquirer.prompt ([
     \n${data.description}
     \n## Table of Contents
     \n- [Installation Instructions](#installation-instructions)
+    \n- [Deployed Application](#deployed-application)
     \n- [Usage](#usage)
     \n- [Contributing](#contributing)
     \n- [Tests](#tests)
     \n- [License](#license)
     \n- [Questions](#questions)
+    \n- [Reference](#reference)
     \n## Installation Instructions
     \n${data.installation}
+    \n## Deployed Application
+    \n[${data.projectName}](${data.link})
     \n## Usage
     \n${data.usage}
     \n## Contributing
@@ -91,7 +108,9 @@ inquirer.prompt ([
     \n### Github Profile
     \n[${data.github}](https://github.com/${data.github})
     \n### Email
-    \n${data.email}`, 
+    \n${data.email}
+    \n## Reference
+    \n${data.reference}`, 
     (err) => err ? console.log(err) : console.log('README.md created!')
     )
 })
