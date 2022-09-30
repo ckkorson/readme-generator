@@ -1,10 +1,10 @@
-# 
+# README Generator
     
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
     
 ## Description
     
-
+Application will create a professional README file base on user input.
     
 ## Table of Contents
     
@@ -26,15 +26,15 @@
     
 ## Installation Instructions
     
-
+User must install npm inquirer version 8.2.4
     
 ## Deployed Application
     
-[]()
+[README Generator]()
     
 ## Usage
     
-
+none
     
 ## Contributing
     
@@ -46,17 +46,18 @@
     
 ## License
     
-The project has a license type of: Apache License 2.0
+The project has a license type of: MIT
     
 ## Questions
     
 ### Github Profile
     
-[](https://github.com/)
+[ckkorson](https://github.com/ckkorson)
     
 ### Email
     
-
+caleb.k.korson@gmail.com
     
 ## Reference
     
+https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba
