@@ -1,30 +1,41 @@
 # README Generator
     
 ## Description
-    na
+    
+Creates a README.md file based off user input
     
 ## Table of Contents
     
-[Installation Instructions](#installation-instructions)
+- [Installation Instructions](#installation-instructions)
     
-[Usage](#usage)
+- [Usage](#usage)
     
-[Contributing](#contributing)
+- [Contributing](#contributing)
     
-[Tests](#tests)
+- [Tests](#tests)
     
 ## Installation Instructions
     
-na
+none
     
 ## Usage
     
-na
+none
     
 ## Contributing
     
-na
+none
     
 ## Tests
     
-na
+none
+    
+## Questions
+    
+### Github Profile
+    
+[ckkorson](https://github.com/ckkorson)
+    
+### Email
+    
+caleb.k.korson@gmail.com

@@ -31,18 +31,28 @@ inquirer.prompt ([
         type: 'input',
         name: 'tests',
         message: 'Enter any testing information.'
+    },
+    {
+        type: 'input',
+        name: 'github',
+        message: 'Enter your github username.'
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'Enter your email address.'
     }
 ])
 .then((data) => {
     fs.writeFile('README.md',
     `# ${data.projectName}
     \n## Description
-    ${data.description}
+    \n${data.description}
     \n## Table of Contents
-    \n[Installation Instructions](#installation-instructions)
-    \n[Usage](#usage)
-    \n[Contributing](#contributing)
-    \n[Tests](#tests)
+    \n- [Installation Instructions](#installation-instructions)
+    \n- [Usage](#usage)
+    \n- [Contributing](#contributing)
+    \n- [Tests](#tests)
     \n## Installation Instructions
     \n${data.installation}
     \n## Usage
@@ -50,7 +60,12 @@ inquirer.prompt ([
     \n## Contributing
     \n${data.contribution}
     \n## Tests
-    \n${data.tests}`, 
+    \n${data.tests}
+    \n## Questions
+    \n### Github Profile
+    \n[${data.github}](https://github.com/${data.github})
+    \n### Email
+    \n${data.email}`, 
     (err) => err ? console.log(err) : console.log('README.md created!')
     )
 })
