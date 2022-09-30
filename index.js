@@ -41,6 +41,12 @@ inquirer.prompt ([
         type: 'input',
         name: 'email',
         message: 'Enter your email address.'
+    },
+    {
+        type: 'list',
+        name: 'license',
+        message: 'Select what type of license you would like for this project',
+        choices: ['Apache License 2.0', 'GNU GPLv3', 'MIT', 'ISC']
     }
 ])
 .then((data) => {
@@ -48,11 +54,13 @@ inquirer.prompt ([
     `# ${data.projectName}
     \n## Description
     \n${data.description}
+    \n[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
     \n## Table of Contents
     \n- [Installation Instructions](#installation-instructions)
     \n- [Usage](#usage)
     \n- [Contributing](#contributing)
     \n- [Tests](#tests)
+    \n- [Questions](#questions)
     \n## Installation Instructions
     \n${data.installation}
     \n## Usage
