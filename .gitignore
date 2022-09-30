@@ -105,3 +105,4 @@ dist
 
 # files to ignore
 .DS_Store/
+*.md
