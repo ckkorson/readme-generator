@@ -78,7 +78,7 @@ inquirer.prompt ([
     }
 ])
 .then((data) => {
-    fs.writeFile('README.md',
+    fs.writeFile('./../../module-11/note-taker/README.md',
     `# ${data.projectName}
     \n${licenseSelection(data.license)}
     \n## Description
